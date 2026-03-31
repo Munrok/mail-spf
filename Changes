@@ -1,4 +1,6 @@
 {{$NEXT}}
+  ** Thanks to Giovanni <g.bechis@snb.it> for this change: 
+  - Do not check for multiple CNAMEs if the included domain is a macro
 
 3.20250505 2025-05-05 Australia/Sydney
 
