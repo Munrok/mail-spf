@@ -10,8 +10,9 @@ use constant FALSE  => not TRUE;
 $Error::Debug = TRUE;
 
 sub run_spf_test_suite_file {
-    my ($file_name, $test_case_overrides) = @_;
+    my ($file_name, $test_case_overrides, $server_opts) = @_;
     $test_case_overrides ||= {};
+    $server_opts = { max_void_dns_lookups => undef, %{$server_opts || {}} };
 
     #### Load Test Suite Data and Plan Tests ####
 
@@ -48,7 +49,7 @@ sub run_spf_test_suite_file {
             ),
             default_authority_explanation
                                     => 'DEFAULT',
-            max_void_dns_lookups    => undef  # Be RFC 4408 compliant during testing!
+            %$server_opts,
         );
 
         foreach my $test_case ($scenario->test_cases) { SKIP: {

@@ -9,4 +9,4 @@ plan(skip_all => "Mail::SPF::Test required for testing Mail::SPF's RFC complianc
 
 require('t/Mail-SPF-Test-lib.pm');
 
-run_spf_test_suite_file('t/rfc7208-tests.yml');
+run_spf_test_suite_file('t/rfc7208-tests.yml', undef, { max_void_dns_lookups => 2 });

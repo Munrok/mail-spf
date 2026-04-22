@@ -2514,16 +2514,16 @@ tests:
     host: 1.2.3.4
     mailfrom: foo@e12.example.com
     result: neutral
-  #void-over-limit:
-  #  description: >-
-  #    SPF implementations SHOULD limit "void lookups" to two.  An
-  #    implementation MAY choose to make such a limit configurable.
-  #    In this case, a default of two is RECOMMENDED.
-  #  spec: 4.6.4/7
-  #  helo: mail.example.com
-  #  host: 1.2.3.4
-  #  mailfrom: foo@e11.example.com
-  #  result: permerror
+  void-over-limit:
+    description: >-
+      SPF implementations SHOULD limit "void lookups" to two.  An
+      implementation MAY choose to make such a limit configurable.
+      In this case, a default of two is RECOMMENDED.
+    spec: 4.6.4/7
+    helo: mail.example.com
+    host: 1.2.3.4
+    mailfrom: foo@e11.example.com
+    result: permerror
 zonedata:
   mail.example.com:
     - A: 1.2.3.4
