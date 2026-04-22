@@ -2417,18 +2417,18 @@ tests:
     host: 1.2.3.4
     mailfrom: foo@e2.example.com
     result: permerror
-  #mx-limit:
-  #  description: >-
-  #    there MUST be a limit of no more than 10 MX looked up and checked.
-  #  comment: >-
-  #    The required result for this test was the subject of much controversy
-  #    with RFC4408.  For RFC7208 the ambiguity was resolved in favor of
-  #    producing a permerror result.
-  #  spec: 4.6.4/2
-  #  helo: mail.example.com
-  #  host: 1.2.3.5
-  #  mailfrom: foo@e4.example.com
-  #  result: permerror
+  mx-limit:
+    description: >-
+      there MUST be a limit of no more than 10 MX looked up and checked.
+    comment: >-
+      The required result for this test was the subject of much controversy
+      with RFC4408.  For RFC7208 the ambiguity was resolved in favor of
+      producing a permerror result.
+    spec: 4.6.4/2
+    helo: mail.example.com
+    host: 1.2.3.5
+    mailfrom: foo@e4.example.com
+    result: permerror
   ptr-limit:
     description: >-
       there MUST be a limit of no more than 10 PTR looked up and checked.

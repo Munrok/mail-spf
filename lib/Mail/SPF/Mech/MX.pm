@@ -177,9 +177,15 @@ sub match {
     my @mx_rrs        = $mx_packet->answer
         or $server->count_void_dns_lookup($request);
 
-    # Respect the MX mechanism lookups limit (RFC 4408, 5.4/3/4):
-    @mx_rrs = splice(@mx_rrs, 0, $server->max_name_lookups_per_mx_mech)
-        if defined($server->max_name_lookups_per_mx_mech);
+    # RFC 7208 §4.6.4/2: more than 10 MX records is a permerror.
+    if (
+        defined($server->max_name_lookups_per_mx_mech) and
+        @mx_rrs > $server->max_name_lookups_per_mx_mech
+    ) {
+        throw Mail::SPF::EProcessingLimitExceeded(
+            sprintf("Maximum MX look-ups limit (%d) exceeded",
+                    $server->max_name_lookups_per_mx_mech));
+    }
 
     # TODO Use A records from packet's "additional" section?  Probably not.
 
