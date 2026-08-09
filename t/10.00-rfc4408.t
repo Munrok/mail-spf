@@ -9,4 +9,6 @@ plan(skip_all => "Mail::SPF::Test required for testing Mail::SPF's RFC complianc
 
 require('t/Mail-SPF-Test-lib.pm');
 
-run_spf_test_suite_file('t/rfc4408-tests.yml');
+run_spf_test_suite_file('t/rfc4408-tests.yml', {
+    'mx-limit' => 'SKIP: RFC 4408 was ambiguous on this; RFC 7208 clarified it as permerror'
+});
