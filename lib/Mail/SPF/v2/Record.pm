@@ -16,6 +16,8 @@ Mail::SPF::v2::Record - Sender ID ("spf2.0") record class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

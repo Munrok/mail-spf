@@ -16,6 +16,8 @@ Mail::SPF::Server - Server class for processing SPF requests
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

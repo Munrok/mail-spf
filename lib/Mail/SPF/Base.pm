@@ -16,6 +16,8 @@ Mail::SPF::Base - Base class for Mail::SPF classes
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

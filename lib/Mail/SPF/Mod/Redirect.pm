@@ -16,6 +16,8 @@ Mail::SPF::Mod::Redirect - SPF record C<redirect> modifier class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

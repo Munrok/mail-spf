@@ -16,6 +16,8 @@ Mail::SPF::Mech::Include - SPF record C<include> mechanism class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

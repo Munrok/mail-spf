@@ -16,6 +16,8 @@ Mail::SPF::v1::Record - SPFv1 record class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

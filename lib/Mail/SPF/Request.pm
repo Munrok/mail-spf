@@ -16,6 +16,8 @@ Mail::SPF::Request - SPF request class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

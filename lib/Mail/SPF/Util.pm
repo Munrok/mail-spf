@@ -16,6 +16,8 @@ Mail::SPF::Util - Mail::SPF utility class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

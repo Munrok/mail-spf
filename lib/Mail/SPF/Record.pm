@@ -16,6 +16,8 @@ Mail::SPF::Record - Abstract base class for SPF records
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

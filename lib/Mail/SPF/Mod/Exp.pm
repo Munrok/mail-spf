@@ -16,6 +16,8 @@ Mail::SPF::Mod::Exp - SPF record C<exp> modifier class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

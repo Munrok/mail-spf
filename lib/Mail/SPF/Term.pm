@@ -16,6 +16,8 @@ Mail::SPF::Term - SPF record term class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

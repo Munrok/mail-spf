@@ -16,6 +16,8 @@ Mail::SPF::Mech::A - SPF record C<a> mechanism class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

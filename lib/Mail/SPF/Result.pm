@@ -15,6 +15,8 @@ Mail::SPF::Result - SPF result class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

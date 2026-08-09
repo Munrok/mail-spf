@@ -16,6 +16,8 @@ Mail::SPF::MacroString - SPF record macro string class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

@@ -16,6 +16,8 @@ Mail::SPF::Mech::IP4 - SPF record C<ip4> mechanism class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

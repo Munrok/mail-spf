@@ -17,6 +17,8 @@ that operate on the SMTP sender's IP address
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

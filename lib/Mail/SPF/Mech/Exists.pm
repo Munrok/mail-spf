@@ -16,6 +16,8 @@ Mail::SPF::Mech::Exists - SPF record C<exists> mechanism class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

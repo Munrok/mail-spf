@@ -16,6 +16,8 @@ Mail::SPF::Mod - SPF record modifier base class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

@@ -16,6 +16,8 @@ Mail::SPF::Mech::MX - SPF record C<mx> mechanism class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 

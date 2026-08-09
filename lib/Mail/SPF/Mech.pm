@@ -16,6 +16,8 @@ Mail::SPF::Mech - SPF record mechanism base class
 
 =cut
 
+# VERSION
+
 use warnings;
 use strict;
 
