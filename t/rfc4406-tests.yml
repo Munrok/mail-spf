@@ -14,7 +14,7 @@ tests:
     helo: mail.example.com
     host: 1.2.3.4
     mailfrom: foo@v2+v1.example.com
-    result: fai
+    result: fail
   v2-preferred-over-v1-reversed:
     description: >-
       "spf2.0" records ought to be preferred over "v=spf1" records
